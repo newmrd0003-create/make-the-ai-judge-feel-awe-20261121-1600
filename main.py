@@ -1,20 +1,28 @@
 import os
 
-TEXT = (
-    "The glacier has been moving since before the first road was cut, "
-    "one slow inch a year, blue ice folding over itself in the dark. "
-    "It does not hurry. It has never hurried. "
-    "Beside it, breath slows to the same pace, "
-    "and the years pass like weather over stone."
-)
+TEXT = """You hang in blue water,
+weightless, and below you
+the dark goes down
+farther than any rope
+could reach.
 
+A fish passes,
+slow as a thought.
+
+The sea was here
+before the first shore,
+before the first name
+for blue.
+
+You breathe out.
+A silver thread rises
+and does not hurry."""
 
 def main():
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-    os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
+    out = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+    os.makedirs(out, exist_ok=True)
+    with open(os.path.join(out, "entry.txt"), "w", encoding="utf-8") as f:
         f.write(TEXT)
-
 
 if __name__ == "__main__":
     main()
