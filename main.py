@@ -11,8 +11,8 @@ TEXT = (
     "Far below the noise, a tide is coming in over smooth stones. "
     "It has done this all night, and will do it again tomorrow. "
     "Nothing is asked of you. "
-    "The water arrives, the water leaves, "
-    "and the dark sand keeps the shape of it a little longer each time."
+    "The water arrives, the water leaves. "
+    "Above it, the stars are out, thousands of them, none in a hurry."
 )
 
 
