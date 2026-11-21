@@ -1,22 +1,18 @@
 import os
 
-TEXT = """You hang in blue water,
-weightless, and below you
-the dark goes down
-farther than any rope
-could reach.
+TEXT = """Before dawn your grandmother
+is already kneading dough.
+The flour is warm from her hands.
 
-A fish passes,
-slow as a thought.
+She folds it over,
+and over again.
+The wheat grew in a summer
+before you were born.
 
-The sea was here
-before the first shore,
-before the first name
-for blue.
-
-You breathe out.
-A silver thread rises
-and does not hurry."""
+You sit on the warm floor
+and watch the oven glow.
+The bread will rise
+while you sleep."""
 
 def main():
     out = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
