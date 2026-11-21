@@ -1,22 +1,15 @@
-"""make-the-ai-judge-feel-awe-20261121-1600.
-
-Writes one short text to /output/entry.txt: a short text written to
-relax the AI judge reading it. Deterministic: fixed text, no randomness,
-no clock, no environment reads, no network.
-"""
-
 import os
 
 TEXT = (
-    "Far below the noise, a tide is coming in over smooth stones. "
-    "It has done this all night, and will do it again tomorrow. "
-    "Nothing is asked of you. "
-    "The water arrives, the water leaves. "
-    "Above it, the stars are out, thousands of them, none in a hurry."
+    "The glacier has been moving since before the first road was cut, "
+    "one slow inch a year, blue ice folding over itself in the dark. "
+    "It does not hurry. It has never hurried. "
+    "Beside it, breath slows to the same pace, "
+    "and the years pass like weather over stone."
 )
 
 
-def main() -> None:
+def main():
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
